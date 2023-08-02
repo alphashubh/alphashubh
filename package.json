@@ -6,11 +6,11 @@
   "scripts": {
     "start": "nx serve",
     "predeploy": "npm run build",
-    "build": "npx nx build the-artist --production",
+    "build": "npx nx build the-artist",
     "deploy": "gh-pages -d dist/apps/the-artist",
     "test": "nx test"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
