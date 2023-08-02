@@ -1,4 +1,5 @@
 {
+  "homepage": "https://alphashubh.github.io/alphashubh/",
   "name": "alphashubh",
   "version": "0.0.0",
   "license": "MIT",
@@ -6,7 +7,7 @@
     "start": "nx serve",
     "predeploy": "npm run build",
     "build": "npx nx build the-artist --production",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist/apps/the-artist",
     "test": "nx test"
   },
   "private": true,
