@@ -1,0 +1,23 @@
+{
+  "root": "libs/the-canvas",
+  "sourceRoot": "libs/the-canvas/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/the-canvas/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/the-canvas"],
+      "options": {
+        "jestConfig": "libs/the-canvas/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "projects": {
+    "the-artist": "apps/the-artist",
+    "the-artist-e2e": "apps/the-artist-e2e",
+    "the-bookmark": "apps/the-bookmark",
+    "the-bookmark-e2e": "apps/the-bookmark-e2e",
+    "the-canvas": "libs/the-canvas"
+  }
+}

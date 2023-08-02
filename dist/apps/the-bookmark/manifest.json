@@ -1,0 +1,17 @@
+
+{
+   "name": "The_Bookmark",
+   "description": "Bookmark the URL",
+   "version": "1.0",
+   "manifest_version": 3,
+   "action": {
+       "default_popup": "index.html",
+       "default_title": "Open the popup"
+   },
+   "icons": {
+   },
+   "permissions": ["storage", "activeTab", "tabs", "bookmarks", "runtime"],
+   "background": {
+    "service_worker": "background.js"
+  }
+}

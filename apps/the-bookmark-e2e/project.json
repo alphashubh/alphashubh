@@ -1,0 +1,28 @@
+{
+  "root": "apps/the-bookmark-e2e",
+  "sourceRoot": "apps/the-bookmark-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/the-bookmark-e2e/cypress.json",
+        "devServerTarget": "the-bookmark:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "the-bookmark:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/the-bookmark-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["the-bookmark"]
+}

@@ -1,0 +1,73 @@
+{
+  "root": "apps/the-artist",
+  "sourceRoot": "apps/the-artist/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/the-artist",
+        "index": "apps/the-artist/src/index.html",
+        "baseHref": "/",
+        "main": "apps/the-artist/src/main.tsx",
+        "polyfills": "apps/the-artist/src/polyfills.ts",
+        "tsConfig": "apps/the-artist/tsconfig.app.json",
+        "assets": [
+          "apps/the-artist/src/favicon.ico",
+          "apps/the-artist/src/assets"
+        ],
+        "styles": ["apps/the-artist/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/the-artist/src/environments/environment.ts",
+              "with": "apps/the-artist/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "the-artist:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "the-artist:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/the-artist/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/the-artist"],
+      "options": {
+        "jestConfig": "apps/the-artist/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

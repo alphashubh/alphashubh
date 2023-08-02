@@ -1,0 +1,75 @@
+{
+  "root": "apps/the-bookmark",
+  "sourceRoot": "apps/the-bookmark/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/the-bookmark",
+        "index": "apps/the-bookmark/src/index.html",
+        "baseHref": "/",
+        "main": "apps/the-bookmark/src/main.tsx",
+        "polyfills": "apps/the-bookmark/src/polyfills.ts",
+        "tsConfig": "apps/the-bookmark/tsconfig.app.json",
+        "assets": [
+          "apps/the-bookmark/src/favicon.ico",
+          "apps/the-bookmark/src/assets",
+          "apps/the-bookmark/src/manifest.json",
+          "apps/the-bookmark/src/background.js"
+        ],
+        "styles": ["apps/the-bookmark/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/the-bookmark/src/environments/environment.ts",
+              "with": "apps/the-bookmark/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "the-bookmark:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "the-bookmark:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/the-bookmark/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/the-bookmark"],
+      "options": {
+        "jestConfig": "apps/the-bookmark/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,28 @@
+{
+  "root": "apps/the-artist-e2e",
+  "sourceRoot": "apps/the-artist-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/the-artist-e2e/cypress.json",
+        "devServerTarget": "the-artist:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "the-artist:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/the-artist-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["the-artist"]
+}
