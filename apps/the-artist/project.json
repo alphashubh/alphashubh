@@ -11,7 +11,7 @@
         "compiler": "babel",
         "outputPath": "dist/apps/the-artist",
         "index": "apps/the-artist/src/index.html",
-        "baseHref": "/",
+        "baseHref": "/alphashubh/",
         "main": "apps/the-artist/src/main.tsx",
         "polyfills": "apps/the-artist/src/polyfills.ts",
         "tsConfig": "apps/the-artist/tsconfig.app.json",

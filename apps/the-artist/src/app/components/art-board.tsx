@@ -1,4 +1,4 @@
-import { Button, ButtonGroup } from '@mui/material';
+import { Button, ButtonGroup, Paper } from '@mui/material';
 import {
   FilledCircle,
   FilledRectangle,
@@ -26,6 +26,11 @@ const ArtBoard: React.FC<IArtBoard> = (props) => {
     }
   }, []);
 
+  useEffect(() => {
+   if(canvas?.current?.height) canvas.current.height = props.height;
+   if(canvas?.current?.width) canvas.current.height = props.height;
+   if(ctx?.current)drawArt(ctx.current);
+  }, [props.height, props.width])
 
   const drawArt = (ctx: CanvasRenderingContext2D) => {
     let colorPallete = ColorPallete[getRandomInt(0, ColorPallete.length)];
@@ -126,13 +131,16 @@ const ArtBoard: React.FC<IArtBoard> = (props) => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <Paper sx={{ display: 'flex', flexDirection: 'column' }}>
       <ButtonGroup
         variant="contained"
         aria-label="outlined primary button group"
       >
-        <Button onClick={handlePrint}>Print Art</Button>
+        <Button 
+        sx={{m: '1rem'}}
+        onClick={handlePrint}>Print Art</Button>
         <Button
+        sx={{m: '1rem'}}
           onClick={(e) => {
             if (ctx.current) drawArt(ctx.current);
           }}
@@ -148,7 +156,7 @@ const ArtBoard: React.FC<IArtBoard> = (props) => {
           height={props.height}
         ></canvas>
       </div>
-    </div>
+    </Paper>
   );
 };
 export default ArtBoard;
