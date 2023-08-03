@@ -7393,7 +7393,7 @@ function App() {
   const [width, setWidth] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(1284);
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("h1", {
-      children: "Ther Artist test"
+      children: "Ther Artist"
     }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 12,
@@ -7404,7 +7404,7 @@ function App() {
       value: height
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 13,
       columnNumber: 7
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("input", {
       type: "number",
@@ -7412,7 +7412,7 @@ function App() {
       value: width
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 14,
       columnNumber: 7
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)(_components_art_board__WEBPACK_IMPORTED_MODULE_1__["default"], {
       height: height,
@@ -7420,7 +7420,7 @@ function App() {
       border: "1px solid black"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 15,
       columnNumber: 7
     }, this)]
   }, void 0, true);
