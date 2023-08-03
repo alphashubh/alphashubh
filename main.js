@@ -7616,6 +7616,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2784);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8316);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9857);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3557);
 /* harmony import */ var _app_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8354);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9663);
 var _jsxFileName = "C:\\z-drive_1\\self_lib\\workspace\\alphashubh\\apps\\the-artist\\src\\main.tsx",
@@ -7627,8 +7628,11 @@ var _jsxFileName = "C:\\z-drive_1\\self_lib\\workspace\\alphashubh\\apps\\the-ar
 
 react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, {
   children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
-    basename: (_process = process) == null || (_process = ({"NODE_ENV":"production","NX_CLI_SET":"true","NX_FORWARD_OUTPUT":"true","NX_INVOKED_BY_RUNNER":"true","NX_SKIP_NX_CACHE":"true","NX_TASK_HASH":"f8c2abaa7612e32db3b6782082b166829899efdab778fc1b389ab896aa447fa9","NX_TASK_TARGET_PROJECT":"the-artist","NX_TERMINAL_OUTPUT_PATH":"C:\\z-drive_1\\self_lib\\workspace\\alphashubh\\node_modules\\.cache\\nx\\terminalOutputs\\f8c2abaa7612e32db3b6782082b166829899efdab778fc1b389ab896aa447fa9","NX_WORKSPACE_ROOT":"C:\\z-drive_1\\self_lib\\workspace\\alphashubh"})) == null ? void 0 : _process['PUBLIC_URL'],
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_app_app__WEBPACK_IMPORTED_MODULE_2__["default"], {}, void 0, false, {
+    basename: (_process = process) == null || (_process = ({"NODE_ENV":"production","NX_CLI_SET":"true","NX_FORWARD_OUTPUT":"true","NX_INVOKED_BY_RUNNER":"true","NX_SKIP_NX_CACHE":"true","NX_TASK_HASH":"c8dc40fd3ab5fc6268d926b2dc63333b6bab8247bbb554d572a60c31dd08fa74","NX_TASK_TARGET_PROJECT":"the-artist","NX_TERMINAL_OUTPUT_PATH":"C:\\z-drive_1\\self_lib\\workspace\\alphashubh\\node_modules\\.cache\\nx\\terminalOutputs\\c8dc40fd3ab5fc6268d926b2dc63333b6bab8247bbb554d572a60c31dd08fa74","NX_WORKSPACE_ROOT":"C:\\z-drive_1\\self_lib\\workspace\\alphashubh"})) == null ? void 0 : _process['PUBLIC_URL'],
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+      path: "/",
+      Component: _app_app__WEBPACK_IMPORTED_MODULE_2__["default"]
+    }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 10,
       columnNumber: 7
