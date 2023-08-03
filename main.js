@@ -7627,7 +7627,7 @@ var _jsxFileName = "C:\\z-drive_1\\self_lib\\workspace\\alphashubh\\apps\\the-ar
 
 react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, {
   children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
-    basename: window.location.pathname,
+    basename: "/alphashubh/",
     children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
       path: "/",
       Component: _app_app__WEBPACK_IMPORTED_MODULE_2__["default"]
